@@ -1,0 +1,1 @@
+export const homeImage = 'https://img.freepik.com/premium-photo/man-sitting-alone-nature-wilderness-working-laptop-male-traveler-blogger-work-remote-netbook-computer-while-enjoying-nature-landscape-view-sunset_106035-1537.jpg?w=900'
