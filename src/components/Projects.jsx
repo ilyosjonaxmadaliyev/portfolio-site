@@ -4,7 +4,8 @@ import createUser from "../assets/create-uzer.png";
 import todolist from "../assets/todo-crud.png";
 import weather from "../assets/weather-api.png";
 import wordapi from "../assets/word-api.png";
-// import youtube from "../assets/youtube.png";
+import comfy from "../assets/comfy.png";
+import users from "../assets/users.png";
 
 function Projects() {
   return (
@@ -21,17 +22,17 @@ function Projects() {
         </p>
       </div>
       <div className="grid sm:grid-cols-2 gap-12 pt-16">
-        {/* <ProjectItem
-          img={youtube}
-          title={"YouTube (clone)"}
-          desc={"React Js"}
-          link={"/"}
-        /> */}
         <ProjectItem
-          img={createUser}
-          title={"Create User App (CRUD)"}
+          img={comfy}
+          title={"Responsive website with redux-toolkit"}
           desc={"React Js"}
-          link={"https://create-users-app.netlify.app/"}
+          link={"https://ia-comfy-store-app.netlify.app/"}
+        />
+        <ProjectItem
+          img={users}
+          title={"User information (Crud app)"}
+          desc={"React Js, Redux-toolkit"}
+          link={"https://ia-crud-app.netlify.app"}
         />
         <ProjectItem
           img={todolist}
@@ -44,6 +45,12 @@ function Projects() {
           title={"Weather App (API)"}
           desc={"JavaScript"}
           link={"https://ia-weather-info.netlify.app/"}
+        />
+        <ProjectItem
+          img={createUser}
+          title={"Create User App (CRUD)"}
+          desc={"React Js"}
+          link={"https://create-users-app.netlify.app/"}
         />
         <ProjectItem
           img={wordapi}
