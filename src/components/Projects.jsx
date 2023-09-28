@@ -32,7 +32,7 @@ function Projects() {
           img={users}
           title={"User information (Crud app)"}
           desc={"React Js, Redux-toolkit"}
-          link={"Netlify (https://papaya-crostata-b8e704.netlify.app)"}
+          link={"https://papaya-crostata-b8e704.netlify.app"}
         />
         <ProjectItem
           img={todolist}
