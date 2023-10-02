@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import {
   AiOutlineClose,
   AiOutlineHome,
@@ -9,13 +11,15 @@ import { GrProjects } from "react-icons/gr";
 import { BsPerson } from "react-icons/bs";
 
 function Sidenav() {
+  const [t] = useTranslation("global");
+
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
   };
   return (
     <div>
-      <div className="fixed top-4 right-4 z-[99] md:hidden">
+      <div className="fixed top-3 right-3 z-[999] md:hidden">
         {nav ? (
           <AiOutlineClose
             size={30}
@@ -41,28 +45,28 @@ function Sidenav() {
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <AiOutlineHome size={20} />
-            <span className="pl-3">Home</span>
+            <span className="pl-3">{t("home")}</span>
           </a>
           <a
             href="#about"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <BsPerson size={20} />
-            <span className="pl-3">About me</span>
+            <span className="pl-3">{t("about")}</span>
           </a>
           <a
             href="#skils"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <GrProjects size={20} />
-            <span className="pl-3">Skils</span>
+            <span className="pl-3">{t("skills")}</span>
           </a>
           <a
             href="#projects"
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-105 ease-in duration-200"
           >
             <AiOutlineProject size={20} />
-            <span className="pl-3">Projects</span>
+            <span className="pl-3">{t("project")}</span>
           </a>
         </div>
       ) : (

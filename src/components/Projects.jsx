@@ -6,55 +6,51 @@ import weather from "../assets/weather-api.png";
 import wordapi from "../assets/word-api.png";
 import comfy from "../assets/comfy.png";
 import users from "../assets/users.png";
+import { useTranslation } from "react-i18next";
 
 function Projects() {
+  const [t] = useTranslation("global");
+
   return (
     <div id="projects" className="max-w-[1140px] m-auto md:pl-20 px-4 py-16">
-      <h1 className="text-4xl font-bold text-start text-[#4c185c]">Projects</h1>
+      <h1 className="text-4xl font-bold text-start text-[#4c185c]">{ t("project")}</h1>
       <div className="border-l-4 border-[#4c185c] ">
-        <p className="pt-4 text-xl text-[#16205b] pl-4">
-          When I set out to become a web developer, I set myself many noble
-          goals. During my studies, I worked a lot on myself and did many small
-          projects. And I want to share some of them with you. These projects
-          may not attract much attention, but I promise to share the results
-          with you in the near future when I get involved in big and real
-          projects with a big team!
-        </p>
+        <p className="pt-4 text-xl text-[#16205b] pl-4">{t("project_desc")}</p>
       </div>
       <div className="grid sm:grid-cols-2 gap-12 pt-16">
         <ProjectItem
           img={comfy}
-          title={"Responsive website with redux-toolkit"}
+          title={t("more_info1")}
           desc={"React Js"}
           link={"https://ia-comfy-store-app.netlify.app/"}
         />
         <ProjectItem
           img={users}
-          title={"User information (Crud app)"}
+          title={t("more_info2")}
           desc={"React Js, Redux-toolkit"}
           link={"https://papaya-crostata-b8e704.netlify.app"}
         />
         <ProjectItem
           img={todolist}
-          title={"ToDo List"}
+          title={t("more_info3")}
           desc={"React Js"}
           link={"https://ia-todo-list.netlify.app/"}
         />
         <ProjectItem
           img={weather}
-          title={"Weather App (API)"}
+          title={t("more_info4")}
           desc={"JavaScript"}
           link={"https://ia-weather-info.netlify.app/"}
         />
         <ProjectItem
           img={createUser}
-          title={"Create User App (CRUD)"}
+          title={t("more_info5")}
           desc={"React Js"}
           link={"https://create-users-app.netlify.app/"}
         />
         <ProjectItem
           img={wordapi}
-          title={"English Words"}
+          title={t("more_info6")}
           desc={"JavaScript"}
           link={"https://ia-words-api.netlify.app/"}
         />

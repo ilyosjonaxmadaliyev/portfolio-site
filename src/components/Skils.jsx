@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 const skills = [
   "HTML 5",
   "CSS 3",
@@ -10,7 +12,6 @@ const skills = [
   "TAILWIND CSS",
   "BOOTSTRAP",
   "GIT",
-  "Backend basics with NODE JS",
   "DATABASE",
 ];
 const tools = [
@@ -23,20 +24,15 @@ const tools = [
 ];
 
 function Skils() {
+  const [t] = useTranslation("global");
+
   return (
     <div id="skils" className="max-w-[1140px] m-auto md:pl-20 p-4 pt-24">
-      <h1 className="text-4xl font-bold text-start text-[#094e12]">Skills</h1>
+      <h1 className="text-4xl font-bold text-start text-[#094e12]">{ t("skills")}</h1>
       <div className="border-l-4 border-[#094e12] ">
-        <p className="pt-4 text-xl text-[#16205b] pl-4">
-          In our century, which is developing in every field, it is necessary to
-          continuously master the advanced technologies related to our field.
-          Learning HTML, CSS, and JavaScript is no longer enough to become a
-          good front-end developer. So I wanted to list some of the skills I've
-          learned so far that are essential for a strong front-end developer.
-          And these are:
-        </p>
+        <p className="pt-4 text-xl text-[#16205b] pl-4">{t("skills_desc")}</p>
         <h3 className="text-xl py-6 font-bold text-[#255c2d]">
-          Technical skills
+          {t("category_skills")}
         </h3>
         <div className="flex flex-wrap pl-4">
           {skills.map((skil) => {
@@ -47,9 +43,13 @@ function Skils() {
               </h5>
             );
           })}
+          <h5 className="font-bold text-[#09190a]">
+            <span className="px-2 text-green-600">*</span>
+            {t("skills_1")}
+          </h5>
         </div>
         <h3 className="text-xl py-6 font-bold text-[#255c2d]">
-          Programs used
+          {t("programs_used")}
         </h3>
         <div className="flex flex-wrap pl-4">
           {tools.map((tool) => {
@@ -62,21 +62,21 @@ function Skils() {
           })}
         </div>
         <h3 className="text-xl py-6 font-bold text-[#255c2d]">
-          Languages
+          {t("languages")}
         </h3>
         <div className="flex flex-wrap pl-4">
-              <h5 className="font-bold text-[#09190a]">
-                <span className="px-2 text-green-600">*</span>
-                Uzbek - (native)
-              </h5>
-              <h5 className="font-bold text-[#09190a]">
-                <span className="px-2 text-green-600">*</span>
-                Russian - (B1 medium)
-              </h5>
-              <h5 className="font-bold text-[#09190a]">
-                <span className="px-2 text-green-600">*</span>
-                English - (A2 basic)
-              </h5>
+          <h5 className="font-bold text-[#09190a]">
+            <span className="px-2 text-green-600">*</span>
+            {t("uz")}
+          </h5>
+          <h5 className="font-bold text-[#09190a]">
+            <span className="px-2 text-green-600">*</span>
+            {t("ru")}
+          </h5>
+          <h5 className="font-bold text-[#09190a]">
+            <span className="px-2 text-green-600">*</span>
+            {t("en")}
+          </h5>
         </div>
       </div>
     </div>
