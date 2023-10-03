@@ -39,7 +39,7 @@ function Main() {
               download={"Shaxsiy-rezyume"}
               className="mt-6 text-md bg-slate-400 rounded p-1.5 shadow-lg hover:scale-105 ease-in duration-200"
             >
-              CV Uz ↓
+              CV Uz ⇩
             </a>
             <a
               target="blank"
@@ -47,7 +47,7 @@ function Main() {
               download={"Personal-resume"}
               className="mt-6 text-md sm:text-md bg-slate-400 rounded p-1.5 shadow-lg hover:scale-105 ease-in duration-200"
             >
-              CV En ↓
+              CV En ⇩
             </a>
             <a
               target="blank"
@@ -55,7 +55,7 @@ function Main() {
               download={"Личное-резюме"}
               className="mt-6 text-md bg-slate-400 rounded p-1.5 shadow-lg hover:scale-105 ease-in duration-200"
             >
-              CV Ru ↓
+              CV Ru ⇩
             </a>
           </div>
         </div>
