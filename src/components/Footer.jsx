@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <div className="bg-slate-500 p-4 flex justify-center">
-      <h4 className="flex items-center sm:text-xl text-[#0c0b29]">
+      <h4 className="flex items-center text-center text-xs sm:text-xl text-[#0c0b29]">
         <span className="mr-2">
           <AiOutlineCopyright />
         </span>
