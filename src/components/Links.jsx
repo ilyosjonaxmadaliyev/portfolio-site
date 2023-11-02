@@ -3,7 +3,6 @@ import {
   FaLinkedin,
   FaInstagram,
   FaTelegram,
-  FaFacebook,
 } from "react-icons/fa";
 
 const links = [
@@ -16,11 +15,6 @@ const links = [
     id: 2,
     element: <FaInstagram size={25} />,
     url: "https://www.instagram.com/ilyos_axmadali/",
-  },
-  {
-    id: 3,
-    element: <FaFacebook size={25} />,
-    url: "https://www.facebook.com/ilyos.axmadaliyev.9?mibextid=ZbWKwL",
   },
   {
     id: 4,
@@ -44,7 +38,7 @@ function Links() {
             target="blank"
             key={link.id}
             href={link.url}
-            className="text-gray-300 shadow-lg  cursor-pointer hover:text-gray-500 hover:scale-110 ease-in duration-200"
+            className="text-gray-300 shadow-lg cursor-pointer hover:text-gray-500 hover:scale-110 ease-in duration-200"
           >
             {link.element}
           </a>
